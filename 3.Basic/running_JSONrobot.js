@@ -20,15 +20,15 @@ function create(){
 	// The older way  
 	game.physics.arcade.enable(bot);
 	bot.body.velocity.x = -100;
-	console.log("")
+	
 
 }
 function update(){
 
-	if(bot.body.x <=0){
+	if(bot.body.y <=0){
 		bot.body.velocity.x = +100;
 	}
-	else if(bot.body.x>=800){
+	else if(bot.body.y>=800){
 		bot.body.velocity.x = -100;
 	}	
 
